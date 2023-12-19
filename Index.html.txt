@@ -1,0 +1,185 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            width: 45%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        article h2 {
+            margin-top: 10px;
+        }
+
+        article p {
+            color: #777;
+        }
+
+        article button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .register-btn {
+            padding: 10px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .burger-menu {
+                display: block;
+            }
+
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            article {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 960px) {
+            .burger-menu {
+                display: none;
+            }
+
+            nav {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/128/433/433707.png" alt="Логотип">
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Контакти</a>
+            <a href="#">Про нас</a>
+        </nav>
+        <div class="burger-menu">☰</div>
+        <button class="register-btn">Реєстрація</button>
+    </header>
+
+    <main>
+        <article>
+            <img src="https://avatars.mds.yandex.net/i?id=8a26aac3e3ddd8037afe9732f518cca6d431b1c8-9869529-images-thumbs&amp;n=13" alt="Watermelon paradise">
+            <h2>Watermelon paradise</h2>
+            <p>The best place to experience the taste of real watermelon</p>
+            <p>Ціна: $300</p>
+            <button>Замовити</button>
+        </article>
+
+        <article>
+            <img src="https://cdn.u.media/ogorodniki_ohpk/_-aim5Nng.png" alt="Watermelon paradise">
+            <h2>Watermelon Densuke</h2>
+            <p>The best place to experience the taste of real watermelon</p>
+            <p>Ціна: $4500</p>
+            <button>Замовити</button>
+        </article>
+
+        <article>
+            <img src="https://cdn.botanichka.ru/wp-content/uploads/2020/04/10-ekzoticheskih-sortov-arbuza-kotoryie-vas-udivyat-01.jpg" alt="Watermelon paradise">
+            <h2>Watermelon Vector</h2>
+            <p>The best place to experience the taste of real watermelon</p>
+            <p>Ціна: $500</p>
+            <button>Замовити</button>
+        </article>
+    </main>
+
+
+
+
+</body></html>
